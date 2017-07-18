@@ -30,19 +30,19 @@ public class MagicUsingCharacter extends GameCharacter {
     }
 
     @Override
-    public int setStrength() {
-        return super.setStrength();
+    public int getStrength() {
+        return super.getStrength();
     }
 
     @Override
-    public int setIntellect() {
-        return super.setIntellect();
+    public int getIntellect() {
+        return super.getIntellect();
     }
 
     @Override
     public String Play() {
         String player;
-        player = "Name: " + getName() +"\nStrength: " + setStrength() + "\nIntelligence: " + setIntellect() + "\nMagical Energy: " + getMagicalEnergy();
+        player = "Name: " + getName() +"\nStrength: " + getStrength() + "\nIntelligence: " + getIntellect() + "\nMagical Energy: " + getMagicalEnergy();
         return player;
     }
 }

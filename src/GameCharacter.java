@@ -27,18 +27,18 @@ public class GameCharacter {
         return name;
     }
 
-    public int setStrength() {
+    public int getStrength() {
         return strength;
     }
 
-    public int setIntellect() {
+    public int getIntellect() {
         intellect = rand.nextInt(11);
         return intellect;
     }
 
     public String Play () {
         String player;
-        player = "Name: " + getName() +"\nStrength: " + setStrength() + "\nIntelligence: " + setIntellect();
+        player = "Name: " + getName() +"\nStrength: " + getStrength() + "\nIntelligence: " + getIntellect();
         return player;
     }
 }

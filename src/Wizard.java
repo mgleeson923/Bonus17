@@ -32,13 +32,13 @@ public class Wizard extends MagicUsingCharacter {
     }
 
     @Override
-    public int setStrength() {
+    public int getStrength() {
         strength = rand.nextInt((5 -1) + 1) + 1;
         return strength;
     }
 
     @Override
-    public int setIntellect() {
+    public int getIntellect() {
         intellect = rand.nextInt((10 - 5) + 1) + 5;
         return intellect;
     }
@@ -46,7 +46,7 @@ public class Wizard extends MagicUsingCharacter {
     @Override
     public String Play() {
         String player;
-        player = "Name: " + getName() + "\nClass: Mage" + "\nStrength: " + setStrength() + "\nIntelligence: " + setIntellect() + "\nMagical Energy: " + getMagicalEnergy() + "\nSpells: " + getSpellNum();
+        player = "Name: " + getName() + "\nClass: Mage" + "\nStrength: " + getStrength() + "\nIntelligence: " + getIntellect() + "\nMagical Energy: " + getMagicalEnergy() + "\nSpells: " + getSpellNum();
         return player;
     }
 }

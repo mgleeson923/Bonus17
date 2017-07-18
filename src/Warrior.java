@@ -45,13 +45,13 @@ public class Warrior extends GameCharacter {
     }
 
     @Override
-    public int setStrength() {
+    public int getStrength() {
         strength = rand.nextInt((10-5) + 1) + 5;
         return strength;
     }
 
     @Override
-    public int setIntellect() {
+    public int getIntellect() {
         intellect = rand.nextInt((5-1) + 1) + 1;
         return intellect;
     }
@@ -59,7 +59,7 @@ public class Warrior extends GameCharacter {
     @Override
     public String Play() {
         String player;
-        player = "Name: " + getName() + "\nClass: Warrior" + "\nStrength: " + setStrength() + "\nIntelligence: " + setIntellect() + "\nWeapon Type: " + getWeaponType();
+        player = "Name: " + getName() + "\nClass: Warrior" + "\nStrength: " + getStrength() + "\nIntelligence: " + getIntellect() + "\nWeapon Type: " + getWeaponType();
         return player;
     }
 }
