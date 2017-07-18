@@ -2,12 +2,23 @@
  * Created by michaelgleeson on 7/17/17.
  */
 public class Wizard extends MagicUsingCharacter {
+    int spellNum;
+
     public Wizard(String name, int strength, int intellect, int magicalEngergy) {
         super(name, strength, intellect, magicalEngergy);
     }
 
     public Wizard() {
 
+    }
+
+    public int getSpellNum() {
+        spellNum = rand.nextInt((10) + 1);
+        return spellNum;
+    }
+
+    public void setSpellNum(int spellNum) {
+        this.spellNum = spellNum;
     }
 
     @Override
@@ -35,7 +46,7 @@ public class Wizard extends MagicUsingCharacter {
     @Override
     public String Play() {
         String player;
-        player = "Name: " + getName() + "\nClass: Mage" + "\nStrength: " + setStrength() + "\nIntelligence: " + setIntellect() + "\nMagical Energy: " + getMagicalEnergy();
+        player = "Name: " + getName() + "\nClass: Mage" + "\nStrength: " + setStrength() + "\nIntelligence: " + setIntellect() + "\nMagical Energy: " + getMagicalEnergy() + "\nSpells: " + getSpellNum();
         return player;
     }
 }
