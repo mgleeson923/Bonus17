@@ -62,5 +62,10 @@ public class Warrior extends GameCharacter {
         player = "Name: " + getName() + "\nClass: Warrior" + "\nStrength: " + getStrength() + "\nIntelligence: " + getIntellect() + "\nWeapon Type: " + getWeaponType();
         return player;
     }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + "\nClass: Warrior" + "\nStrength: " + strength + "\nIntelligence: " + intellect + "\nWeapon Type: " + weaponType + "\n";
+    }
 }
 
